@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 200px 1fr 250px 200px;
+            grid-template-rows: 70px 200px 250px 180px;
+            grid-template-areas: 
+            "item-1 item-1 item-1 item-1"
+            "item-2 item-3 item-3 item-3"
+            "item-2 item-4 item-5 item-6"
+            "item-2 item-7 item-7 item-7";
+            gap: 5px;
+        }
+        #item-1 {
+            grid-area: item-1;
+        }
+        #item-2 {
+            grid-area: item-2;
+        }
+        #item-3 {
+            grid-area: item-3;
+        }
+        #item-4 {
+            grid-area: item-4;
+        }
+        #item-5 {
+            grid-area: item-5;
+        }
+        #item-6 {
+            grid-area: item-6;
+        }
+        #item-7 {
+            grid-area: item-7;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="iot" id="item-1" style="background-color: red">AAAAA</div>
+      <div class="iot" id="item-2" style="background-color: yellow">BBBBB</div>
+      <div class="iot" id="item-3" style="background-color: orangered">CCCCC</div>
+      <div class="iot" id="item-4" style="background-color: aqua">DDDDD</div>
+      <div class="iot" id="item-5" style="background-color: plum">EEEEE</div>
+      <div class="iot" id="item-6" style="background-color: lightgreen">FFFFF</div>
+      <div class="iot" id="item-7" style="background-color: violet">GGGGG</div>
+    </div>
+  </body>
+</html>

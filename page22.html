@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        img {
+        width: 500px;
+        height: 200px;
+        object-fit: cover;
+      }
+      #container1 {
+        /*การจัด layout แบบ flex คือการจัดเรียง element ในแนวนอนหรือแนวตั้ง*/
+        display: flex;
+        flex-direction: row; /*row column row-reverse column-reverse*/
+        gap: 20px;
+      }
+      #container2 {
+        display: flex;
+        /*gap: 10px;*/
+        justify-content: space-evenly;
+        /*start end center space-between space-around space-evenly(space-around คล้ายกับ space-evenly)*/
+      }
+      #item-6 {
+        font-size: 30px;
+        align-items: center; /*start end center(ใช้ปรับแต่ง ข้อความให้ตรงกัน)*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container1">
+      <div id="item-1">AAAAA</div>
+      <div id="item-2">BBBBB</div>
+      <div id="item-3">CCCCC</div>
+      <div id="item-4">DDDDD</div>
+    </div>
+    <hr />
+    <div id="container2">
+      <div id="item-5">AAAAA</div>
+      <div id="item-6">BBBBB</div>
+      <div id="item-7">CCCCC</div>
+      <div id="item-8">
+        <img
+          id="ff"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHETF9T76WT7Gz8_Z0YVvFd-ZEPEcUMhcAwQ&s"
+          alt="ff"
+        />
+      </div>
+    </div>
+    <hr />
+    <div id="container3">
+      <div id="item-9">AAAAA</div>
+      <div id="item-10">BBBBB</div>
+      <div id="item-11">CCCCC</div>
+      <div id="item-12">DDDDD</div>
+      <div id="item-13">EEEEE</div>
+      <div id="item-14">FFFFF</div>
+      <div id="item-15">GGGGG</div>
+      <div id="item-16">HHHHH</div>
+      <div id="item-17">IIIII</div>
+      <div id="item-18">JJJJJ</div>
+    </div>
+  </body>
+</html>

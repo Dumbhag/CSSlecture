@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .itot {
+        border-radius: 5px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 300px 1fr 2fr; 
+        grid-template-rows: 1fr 3fr 300px;
+        /*หากกำหนดเป็น frจะมีการเปลี่ยนขนาดตามขนาดหน้าจอ แต่ pxเวลามีการเปลี่ยนขนาดหน้าจอขนาดจะไม่เปลี่ยนตาม สามารถใช่ผสมกันได้*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="iot" id="item-1" style="background-color: royalblue">
+        AAAAA
+      </div>
+      <div class="iot" id="item-2" style="background-color: darkblue">
+        BBBBB
+      </div>
+      <div class="iot" id="item-3" style="background-color: aqua">CCCCC</div>
+      <div class="iot" id="item-4" style="background-color: chartreuse">
+        DDDDD
+      </div>
+      <div class="iot" id="item-5" style="background-color: violet">EEEEE</div>
+      <div class="iot" id="item-6" style="background-color: indianred">
+        FFFFF
+      </div>
+      <div class="iot" id="item-7" style="background-color: palegoldenrod">
+        GGGGG
+      </div>
+      <div class="iot" id="item-8" style="background-color: goldenrod">
+        HHHHH
+      </div>
+      <div class="iot" id="item-9" style="background-color: maroon">IIIII</div>
+      <div class="iot" id="item-10" style="background-color: mediumspringgreen">
+        JJJJJ
+      </div>
+    </div>
+  </body>
+</html>

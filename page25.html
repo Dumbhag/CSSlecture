@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 100px 200px 100px 400px;
+        /*column1 = 100px column2 = 200px column3 = 100px column4 = 400px;
+        (ความสูงของแถวขึ้นอยู่กับ content ข้างใน ถ้าเราไม่กำหนดความสูงของแถวด้วย grid-template-rows)*/
+        grid-template-rows: 200px auto 300px;/*(แถวที่ 1 สูง 200px แถวที่ 2 มาตั่นเลยใส่เป็น auto แถวที่ 3 สูง 300px)*/
+        /*row-gap: 10px;*/
+        /*column-gap: 20px;*/
+        /*gap: 20px;*/
+        gap: 10px 20px;/*row-gap column-gap*/
+        /*row-gap คือห่างแนวนอน column-gap คือห่างแนวตั้ง*/
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Flex คือ 1 Dimension , grid คือ 2 Dimension-->
+    <div class="container">
+      <div id="item-1" style="background-color: royalblue">AAAAA</div>
+      <div id="item-2" style="background-color: darkblue">BBBBB</div>
+      <div id="item-3" style="background-color: aqua">CCCCC</div>
+      <div id="item-4" style="background-color: chartreuse">DDDDD</div>
+      <div id="item-5" style="background-color: violet">EEEEE</div>
+      <div id="item-6" style="background-color: indianred">FFFFF</div>
+      <div id="item-7" style="background-color: palegoldenrod">GGGGG</div>
+      <div id="item-8" style="background-color: goldenrod">HHHHH</div>
+      <div id="item-9" style="background-color: maroon">IIIII</div>
+      <div id="item-10" style="background-color: mediumspringgreen">JJJJJ</div>
+    </div>
+  </body>
+</html>
