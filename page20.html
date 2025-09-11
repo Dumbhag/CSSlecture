@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #aa, 
+        #bb{
+            display: inline;
+            /*หากใส่display เป็น inline จะใฃ้ margin top, margin bottom ไม่ได้*/
+        }
+        #ee, 
+        #ff{
+            display: block;
+        }
+        #dd{
+            display: inline-block;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #gg{ 
+            margin-top: 50px;
+            margin-bottom: 50px;
+            /*ใช้ไม่ได้กับ inline tag*/
+        }
+        h1{
+            display: inline;
+        }
+        #hh{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS Display รูปแบบการแสดงผล -->
+     <h1 style="background-color: bisque;">Muhahahahhaahahaha</h1>
+     <div id="aa" style="background-color: red;">Heeee Hee</div>
+     <div id="bb" style="background-color: green;">Heeee Hee</div>
+     <div id="cc" style="background-color: blue;">Heeee Hee</div>
+     <div id="dd" style="background-color: yellow;">Heeee Hee</div>
+     <hr />
+     <span id="ee" style="background-color: salmon;">Heeee Hee</span>
+     <span id="ff" style="background-color: peachpuff;">Heeee Hee</span>
+     <span id="gg" style="background-color: purple;">Heeee Hee</span>
+     <span id="hh" style="background-color: plum;">Heeee Hee</span>
+     
+</body>
+</html>
